@@ -1,25 +1,25 @@
-﻿//---------------------------------------------------
-/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
-//---------------------------------------------------
+
 public class Orbiter : MonoBehaviour 
 {
-	//---------------------------------------------------
+
 	public Transform Pivot = null;
 	private Transform ThisTransform = null;
 	private Quaternion DestRot = Quaternion.identity;
+	
 	//Distance to maintain from pivot
 	public float PivotDistance = 5f;
 	public float RotSpeed = 10f;
 	private float RotX = 0f;
 	private float RotY = 0f;
-	//---------------------------------------------------
+
 	void Awake()
 	{
 		ThisTransform = GetComponent<Transform>();
 	}
-	//---------------------------------------------------
+
 	void Update()
 	{
 		float Horz = CrossPlatformInputManager.GetAxis("Horizontal");
@@ -36,7 +36,6 @@ public class Orbiter : MonoBehaviour
 		//Adjust position
 		ThisTransform.position = Pivot.position + ThisTransform.rotation * Vector3.forward * -PivotDistance;
 	}
-	//---------------------------------------------------
+
 }
-//---------------------------------------------------
-*/
+

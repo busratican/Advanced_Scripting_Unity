@@ -1,10 +1,8 @@
-﻿//---------------------------------------------------
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
-//---------------------------------------------------
+
 public class GizmoShow : MonoBehaviour 
 {
-	//---------------------------------------------------
 	//Should we display gizmos for object?
 	public bool ShowGizmos = true;
 
@@ -16,7 +14,6 @@ public class GizmoShow : MonoBehaviour
 	public float Range = 10f;
 
 	//Display forward vector
-	//---------------------------------------------------
 	void OnDrawGizmos() 
 	{
 		//Exit if gizmo drawing is disabled
@@ -33,6 +30,5 @@ public class GizmoShow : MonoBehaviour
 		Gizmos.color = Color.blue;
 		Gizmos.DrawLine(transform.position, transform.position+transform.forward * Range);
 	}
-	//---------------------------------------------------
+
 }
-//---------------------------------------------------

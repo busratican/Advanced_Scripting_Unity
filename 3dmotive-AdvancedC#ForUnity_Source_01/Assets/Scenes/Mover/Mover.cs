@@ -15,6 +15,6 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        objectTransform.position += objectTransform.forward * maxSpeed;
+        objectTransform.position += objectTransform.forward * maxSpeed * Time.deltaTime;
     }
 }
