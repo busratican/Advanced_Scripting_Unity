@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 using UnityEditor;
 
@@ -143,4 +143,4 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
             return new List<string>(PlayerSettings.GetScriptingDefineSymbolsForGroup(group).Split(';'));
         }
     }
-}
+}*/
